@@ -47,10 +47,28 @@
       /* Main body and headings */
       body{
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        background-color: #e6a21e;
       }
+      
+      .container {
+      }
+      
+      page-header {
+      box-shadow: 0 1px 2px rgba(0,0,0,0.29);
+background: #fff;
+background-image: -webkit-linear-gradient( rgba(241,241,241,0.05) 0%,rgba(0,0,0,0.05) 100%);
+background-image: linear-gradient( rgba(241,241,241,0.05) 0%,rgba(0,0,0,0.05) 100%);
+width: 100%;
+padding: 26px 0;
+position: relative;
+}
+      
       .heading, .subheading {
         font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
         text-align: center;
+      }
+      .subheading {
+        color: #049cdb;'
       }
       p.lead {
         padding-top: 1.5%;
@@ -130,21 +148,9 @@
     <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
     <!-- http://stackoverflow.com/a/12270322 -->
     <div class="container">
-      <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
-      <!-- www.google.com/fonts/specimen/Ubuntu -->
-      <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
-      <div class="row-fluid heading">
-        <div class="span12">
-          <h1>Biblioworm</h1>
-        </div>
-      </div> 
-      <div class="row-fluid subheading">
-        <div class="span12">
-          <!-- Special typography from Bootstrap for lead paragraph. -->
-          <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">The social reading game</p>
-        </div>
-      </div>
+<div class="page-header">
+  <h1 class="heading">Biblioworm <small class="subheading">The social reading game</small></h1>
+</div>
       <div class="row-fluid pitch">
         <div class="span5 offset1 video">
           <img class="img-polaroid" src="http://placehold.it/480x300">
@@ -206,17 +212,9 @@
         </div>
         <div class="span5 copy">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
+            You're smart.  You like to read.  Your friends do to.  We make it
+            easy to keep tabs with what your friends are reading and get new
+            ideas for your next read.
           </p>
         </div>
       </div>
@@ -224,17 +222,8 @@
       <div class="row-fluid section2">
         <div class="span5 offset1 copy copy-right">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
+            Competition brings out the best.  See how you stack up in the 
+            bookworm race against your friend.  Play for bragging rights.
           </p>
         </div>
         <div class="span5 asset">
@@ -253,12 +242,13 @@
                 <div class="accordion-heading">
                   <a class="accordion-toggle" data-toggle="collapse"
                      data-parent="#accordion2" href="#collapseOne">
-                    What does FAQ stand for?
+                    What platforms will this game run on?
                   </a>
                 </div>
                 <div id="collapseOne" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    Frequently Asked Question.
+                    This game will be available on Facebook, as well as
+                    on iOS and android devices.
                   </div>
                 </div>
               </div>
@@ -266,12 +256,12 @@
                 <div class="accordion-heading">
                   <a class="accordion-toggle" data-toggle="collapse"
                      data-parent="#accordion2" href="#collapseTwo">
-                    What's a Frequently Asked Question?
+                    What social networks will be support?
                   </a>
                 </div>
                 <div id="collapseTwo" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    A question which is commonly asked by users.
+                    We'll initially be supporting Facebook.
                   </div>
                 </div>
               </div>
@@ -284,11 +274,8 @@
       <!-- http://creativecommons.org/licenses/ -->
       <div class="row-fluid footer">
         <div class="span12">
-          <p>This work is licensed under
-            the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
-              By-SA 3.0
-            </a>, without all the cruft that would otherwise be
-            put at the bottom of the page.</p>
+          <p>Another innovation from <a href="http://java1337.com">Chatsworth Innovations Ltd</a>.
+            </a>Copyright 2013.  All rights reserved.</p>
         </div>
       </div>
     </div>
